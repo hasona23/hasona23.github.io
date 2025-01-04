@@ -25,17 +25,52 @@
         </nav>
     </header>
     <section class="main">
-        <div>
+        
             <h2>Hello I'm hasona23<br><span>Software Developer</span></h2>
             <h3>Learning to code</h3>
             <h4>C#/SQL/.NET</h4>
             <h4>UNITY/MONOGAME</h4>
-            <a href="#projects" class="main-btn">My Work</a>
+            <a href="#projects" class="main-btn" >My Work</a>
+
             <div class="social-icons">
                 <a href="github.com/hasona23"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-        </div>
+            <div class="skills-container">
+                <div class="skills-track" id="track">
+                  <!-- Original skills -->
+                  <div class="skill-box"><img src="./images/htmlcss.png" alt="HTML CSS"></div>
+                  <div class="skill-box"><img src="./images/c-sharp.png" alt="C-SHARP"></div>
+                  <div class="skill-box"><img src="./images/dotnet.png" alt="DOT NET"></div>
+                  <div class="skill-box"><img src="./images/sql.png" alt="SQL"></div>
+                  <div class="skill-box"><img src="./images/git.png" alt="GIT"></div>
+                  <div class="skill-box"><img src="./images/unity.png" alt="UNITY"></div>
+                  <div class="skill-box"><img src="./images/Monogame.png" alt="MONOGAME"></div>
+
+                </div>
+                <script>
+                    // Clone the skills for seamless looping
+                    const track = document.getElementById('track');
+                    const original = track.innerHTML;
+                    track.innerHTML = original + original;
+                
+                    // Optional: Pause animation on hover
+                    track.addEventListener('mouseenter', () => {
+                      track.style.animationPlayState = 'paused';
+                    });
+                
+                    track.addEventListener('mouseleave', () => {
+                      track.style.animationPlayState = 'running';
+                    });
+                
+                    // Optional: Check if images are loaded before starting animation
+                    window.addEventListener('load', () => {
+                      track.style.visibility = 'visible';
+                    });
+                  </script>
+              </div>
+            
+            
     </section>
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>

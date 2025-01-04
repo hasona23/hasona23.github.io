@@ -81,7 +81,8 @@ section{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
     background: url(images/b4.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,6 +115,8 @@ section{
 }
 .main .main-btn{
     color:#fff;
+    margin-top:20px ;
+    text-align: center;
     background-color: var(--primaryColor);
     text-decoration: none;
     font-size: 1.1em;
@@ -130,13 +133,62 @@ section{
     background-color:  var(--darkerColor);
     transform: scale(1.1);
 }
-
 .main .social-icons a{
     text-decoration: none;
     font-size: 1.7em;
     padding-right: 30px;
-   justify-content:space-between;
+   justify-content:center;
+   transition: 1s ease;
 }
+.main .social-icons{
+    justify-self: center;
+    text-align: center;
+}
+.main .skills-container{
+    justify-self: center;
+    align-self: center;
+}
+.skills-container {
+    width: 50%;
+    overflow: hidden;
+    background: var(--background-color);
+    padding: 20px 0;
+  }
+
+  .skills-track {
+    display: flex;
+    gap: 24px;
+    animation: scroll 20s linear infinite;
+    align-items: center;
+  }
+
+  .skill-box {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+
+  .skill-box img {
+    width: 80px;  /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .skill-box:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 .projects {
     background-color: var(--card-background-color);
     color: var(--background-color);
