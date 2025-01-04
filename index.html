@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>MyWebsite</title>
 </head>
 <body>
@@ -24,8 +26,10 @@
     </header>
     <section class="main">
         <div>
-            <h2>Hello I'm hasona23<br><span>Programmer</span></h2>
-            <h3>Learning to codet</h3>
+            <h2>Hello I'm hasona23<br><span>Software Developer</span></h2>
+            <h3>Learning to code</h3>
+            <h4>C#/SQL/.NET</h4>
+            <h4>UNITY/MONOGAME</h4>
             <a href="#projects" class="main-btn">My Work</a>
             <div class="social-icons">
                 <a href="github.com/hasona23"><i class="fab fa-github"></i></a>
@@ -37,78 +41,90 @@
         <h2 class="title">Projects</h2>
     
         <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work1.png" />
+            <div class="card" style="width: 18rem;">
+                <img src="images/work1.png" class="card-img-top" alt="...">
+                <div class="card-header">
+                    <h5 class="card-title">Shifts Logger</h5>
+                  <p class="card-subtitle">Console</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Console</p>
-                    <strong class="project-title">
-                        <span>Shifts Logger</span>
-                        <a href="#" class="more-details">An where you make an API for a shifts logger then use it in you application</a>
-                    </strong>
+                <div class="card-body">
+                  <p class="card-text">An where you make an API for a shifts logger then use it in you application</p>
+                   </div>
+                <div class="card-footer">
+                    <a href="https://github.com/hasona23/ShiftsLogger.hasona23" class="btn btn-primary"><i class="fab fa-github"></i></a>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work2.png" />
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/work2.png" class="card-img-top" alt="...">
+                <div class="card-header">
+                    <h5 class="card-title">Progress Tracker</h5>
+                  <p class="card-subtitle">ASP.NET Core</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Razor Pages .NET</p>
-                    <strong class="project-title">
-                        <span>Progress Tracker</span>
-                        <a href="#" class="more-details">A Website made with Razor pages to Track Progress</a>
-                    </strong>
+                <div class="card-body">
+                  <p class="card-text">A Website made with Razor pages to Track Progress</p>
+                 </div>
+                <div class="card-footer">
+                    <a href="https://github.com/hasona23/ProgressTracker.hasona23" class="btn btn-primary"><i class="fab fa-github"></i></a>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work3.png" />
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/work3.png" class="card-img-top" alt="...">
+                <div class="card-header">
+                    <h5 class="card-title">Book CRUD</h5>
+                  <p class="card-subtitle">ASP.NET Core</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">ASP.NET MVC</p>
-                    <strong class="project-title">
-                        <span>Books</span>
-                        <a href="#" class="more-details">MVC app about adding/storing/deleting/editing books</a>
-                    </strong>
+                <div class="card-body">
+                  <p class="card-text">MVC app about adding/storing/deleting/editing books</p>
+                  </div>
+                <div class="card-footer">
+                    <a href="https://github.com/hasona23/MVC.Movies.hasona23" class="btn btn-primary"><i class="fab fa-github"></i></a>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work4.png" />
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/work4.png" class="card-img-top" alt="...">
+                <div class="card-header">
+                    <h5 class="card-title">Todo List</h5>
+                  <p class="card-subtitle">ASP.NET Core</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">ASP.NET Minimal API</p>
-                    <strong class="project-title">
-                        <span>TodoList</span>
-                        <a href="#" class="more-details">Minimal ASP.NET API and use JS and Bootstrap to use API and for styling</a>
-                    </strong>
+                <div class="card-body">
+                  
+                  <p class="card-text">Minimal ASP.NET API and use JS and Bootstrap to use API and for styling</p>
+                  </div>
+                <div class="card-footer">
+                    <a href="https://github.com/hasona23/TodoMVC.hasona23" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work5.png" />
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/work5.png" class="card-img-top" alt="...">
+                <div class="card-header">
+                    <h5 class="card-title">Budget Tracker</h5>
+                  <p class="card-subtitle">ASP.NET Core</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">ASP.NET MVC</p>
-                    <strong class="project-title">
-                        <span>Budget Tracker</span>
-                        <a href="#" class="more-details">An MVC App where you track your Transactions and Put them into Categories and uses "One to Many" Relationship for Database</a>
-                    </strong>
+                <div class="card-body">
+                  
+                  <p class="card-text">An MVC App where you track your Transactions and Put them into Categories and uses "One to Many" Relationship for Database</p>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work6.png" />
+                <div class="card-footer">
+                    <a href="https://github.com/hasona23/BudgetMVC.hasona23" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Console</p>
-                    <strong class="project-title">
-                        <span>Sports notifier</span>
-                        <a href="#" class="more-details">An APP where you Web-Scrap a Sports Websites then Send an E-mail message to them about teams and there scores and match results</a>
-                    </strong>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/work6.png" class="card-img-top" alt="...">
+                <div class="card-header">
+                    <h5 class="card-title">Sports Notifier</h5>
+                    <p class="card-subtitle">Console</p>
                 </div>
-            </div>
+                <div class="card-body">
+                 
+                  <p class="card-text">An APP where you Web-Scrap a Sports Websites then Send an E-mail message to them about teams and there scores and match results</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/hasona23/SportsNotifier.hasona23" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                
+                </div>
+              </div>
         </div>
     </section>
     <section class="cards contact" id="contact">

@@ -77,6 +77,7 @@ section{
 }
 
 .main {
+    color: var(--primaryColor);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -124,7 +125,6 @@ section{
 }
 
 .main .social-icons a{
-    color: var(--text-color);
     text-decoration: none;
     font-size: 1.7em;
     padding-right: 30px;
@@ -205,6 +205,7 @@ section{
 }
 .card {
     background-color:var(--card-background-color);
+    color:var(--background-color);
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
@@ -212,7 +213,13 @@ section{
     margin: 15px;
     transition: 0.7s ease;
 }
-
+.card {
+    border: 2px var(--primaryColor);
+}
+.card-body{
+    margin-bottom: auto;
+    align-content: center;
+}
 .card:hover {
     transform: scale(1.1);
 }
