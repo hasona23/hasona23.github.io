@@ -90,6 +90,13 @@ section{
 .main h2{
     font-size: 1.4em;
     font-weight: 500;
+    color:var(--primaryColor);
+}
+.main h3{
+    color: var(--primaryColor);
+}
+.main h4{
+    color: var(--primaryColor);
 }
 .main h2 span{
     color: var(--primaryColor);
